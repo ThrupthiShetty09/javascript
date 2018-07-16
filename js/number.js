@@ -56,6 +56,57 @@ function fibonacci(){
     showResult("Fibonacci series of : "+num+" is:" +output);  
     
 }
+function reverse(){
+   num = getUserInput();
+    var rev = 0;
+    var num2 = num;
+    var r;
+    while(num != 0){
+     r = num % 10;
+    rev = rev * 10 + r;
+    num =Math.floor( num/10);    
+    }
+   showResult("Reverse of Number  "+num2+" is:" +rev);   
+    }
+function palindrome(){
+   num = getUserInput();
+ 
+    var rev = 0;
+    var num2 = num;
+    var r;
+    while(num != 0){
+     r = num % 10;
+    rev = rev * 10 + r;
+    num =Math.floor( num/10);      
+    }
+    if(num2 == rev){
+   showResult(" Given Number is  "+num2+" is Palindrome");   
+   }else{
+     showResult(" Given Number is  "+num2+" is not a Palindrome");  
+   }
+    }
+function sumdigits(){
+   num = getUserInput();
+    var sum = 0;
+    var num2 = num;
+    while(num != 0){
+     sum += num % 10;
+     num =Math.floor( num/10);    
+    }
+   showResult("sum of digits  "+num2+" is:" +sum);   
+}
+function sumtosingle(){
+   num = getUserInput();
+    var sum = num;
+    var num2 = num;
+    while(num > 9){
+     sum =Math.floor(num / 10 + num % 10);
+     num = sum;    
+    }
+   showResult("sum to single digits of "+num2+" is:" +sum);   
+}
+
+
 function getUserInput(){
     num=document.getElementById("num").value;
     return num;

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <title>Calculator</title>
+        <li><a href="index.html">Home</a></li>
+    </head>
+    <body>
+          <h3>Calculator Example</h3>
+           <hr/>
+        <p>
+           <label>Number1:</label>
+            <input type="number"
+                   class="num1"
+                   id="num1">
+        </p>
+        <p>
+           <label>Number2:</label>
+            <input type="number"
+                   class="num2"
+                   id="num2">
+        </p>
+        <p>
+            <button onclick="calc('add')">Add</button>
+            <button onclick="calc('sub')">Sub</button>
+            <button onclick="calc('mul')">Mul</button>
+            <button onclick="calc('div')">Div</button>
+            <button onclick="calc('mod')">Mod</button>
+        </p>
+      <p id="res"></p>
+        <script src="js/calc.js"></script>
+    
+    </body>
+</html>

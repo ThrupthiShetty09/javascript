@@ -10,7 +10,7 @@ function checkNumber() {
     }
    document.getElementById("res").innerHTML=message; 
 }
-function bill_calc(){
+function billcalc(){
     var units=document.getElementById("units").value;
     var min_amount=50;
     var total_amount=0;
